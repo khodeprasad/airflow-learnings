@@ -13,7 +13,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 
 default_args = {
-   'owner' : 'loonycorn'
+   'owner': 'PK'
 }
 
 with DAG(
@@ -88,7 +88,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 
 default_args = {
-   'owner' : 'loonycorn'
+   'owner': 'PK'
 }
 
 with DAG(
@@ -252,7 +252,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 
 default_args = {
-   'owner' : 'loonycorn'
+   'owner': 'PK'
 }
 
 with DAG(

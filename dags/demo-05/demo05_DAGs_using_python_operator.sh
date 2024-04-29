@@ -10,7 +10,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 default_args = {
-    'owner' : 'loonycorn'
+    'owner': 'PK'
 }
 
 def print_function():
@@ -58,7 +58,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 default_args = {
-    'owner' : 'loonycorn'
+    'owner': 'PK'
 }
 
 def task_a():
@@ -144,7 +144,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 default_args = {
-    'owner' : 'loonycorn'
+    'owner': 'PK'
 }
 
 def greet_hello(name):

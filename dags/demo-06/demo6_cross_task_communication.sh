@@ -10,7 +10,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 default_args = {
-    'owner' : 'loonycorn'
+    'owner': 'PK'
 }
 
 def increment_by_1(counter):
@@ -76,7 +76,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 default_args = {
-    'owner' : 'loonycorn'
+    'owner': 'PK'
 }
 
 def increment_by_1(value):

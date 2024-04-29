@@ -9,12 +9,12 @@ from airflow.operators.python_operator import PythonOperator
 
 
 default_args = {
-   'owner': 'loonycorn'
+   'owner': 'PK'
 }
 
 
 def read_csv_file():
-    df = pd.read_csv('/Users/loonycorn/airflow/datasets/insurance.csv')
+    df = pd.read_csv('/Users/gangaprasadkhode/airflow/dags/demo-07/versions/datasets//insurance.csv')
 
     print(df)
 
@@ -44,7 +44,7 @@ def groupby_smoker(ti):
     }).reset_index()
 
     smoker_df.to_csv(
-        '/Users/loonycorn/airflow/output/grouped_by_smoker.csv', index=False)
+        '/Users/gangaprasadkhode/airflow/dags/demo-07/versions/output/grouped_by_smoker.csv', index=False)
 
 
 def groupby_region(ti):
@@ -59,7 +59,7 @@ def groupby_region(ti):
     
 
     region_df.to_csv(
-        '/Users/loonycorn/airflow/output/grouped_by_region.csv', index=False)
+        '/Users/gangaprasadkhode/airflow/dags/demo-07/versions/output/grouped_by_region.csv', index=False)
 
 
 with DAG(

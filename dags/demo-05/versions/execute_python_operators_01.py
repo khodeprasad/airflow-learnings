@@ -6,7 +6,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 default_args = {
-    'owner' : 'loonycorn'
+    'owner': 'PK'
 }
 
 def print_function():

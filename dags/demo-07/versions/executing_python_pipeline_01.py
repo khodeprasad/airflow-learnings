@@ -8,11 +8,11 @@ from airflow.operators.python_operator import PythonOperator
 
 
 default_args = {
-   'owner': 'loonycorn'
+   'owner': 'PK'
 }
 
 def read_csv_file():
-    df = pd.read_csv('/Users/loonycorn/airflow/datasets/insurance.csv')
+    df = pd.read_csv('/Users/gangaprasadkhode/airflow/dags/demo-07/versions/datasets//insurance.csv')
 
     print(df)
 
@@ -20,7 +20,7 @@ def read_csv_file():
 
 
 with DAG(
-    'd07_python_pipeline_01',
+    dag_id = 'd07_python_pipeline_01',
     description='Running a Python pipeline',
     default_args=default_args,
     start_date=days_ago(1),
