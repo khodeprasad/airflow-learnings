@@ -1,0 +1,7 @@
+logs/
+airflow-webserver.pid
+airflow.db
+webserver_config.py
+
+__pycache__
+.DS_Store
