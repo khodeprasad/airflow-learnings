@@ -14,7 +14,7 @@ default_args = {
 
 
 def read_csv_file():
-    df = pd.read_csv('/Users/gangaprasadkhode/airflow/dags/demo-07/versions/datasets//insurance.csv')
+    df = pd.read_csv('/Users/gangaprasadkhode/airflow/datasets/insurance.csv')
 
     print(df)
 
@@ -44,7 +44,7 @@ def groupby_smoker(ti):
     }).reset_index()
 
     smoker_df.to_csv(
-        '/Users/gangaprasadkhode/airflow/dags/demo-07/versions/output/grouped_by_smoker.csv', index=False)
+        '/Users/gangaprasadkhode/airflow/output/grouped_by_smoker.csv', index=False)
 
 
 def groupby_region(ti):
@@ -59,7 +59,7 @@ def groupby_region(ti):
     
 
     region_df.to_csv(
-        '/Users/gangaprasadkhode/airflow/dags/demo-07/versions/output/grouped_by_region.csv', index=False)
+        '/Users/gangaprasadkhode/airflow/output/grouped_by_region.csv', index=False)
 
 
 with DAG(
