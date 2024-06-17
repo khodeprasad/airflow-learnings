@@ -5,3 +5,5 @@ webserver_config.py
 
 __pycache__
 .DS_Store
+cv/
+cv-base/
